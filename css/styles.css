@@ -489,6 +489,15 @@ TEAM SECTION
 .h2-deco-port {
   margin-bottom: 8px;
 }
+
+/*
+====================
+FOOTER STYLES
+====================
+*/
+.footer-network {
+  gap: 16px;
+}
 /* Modal window*/
 .backdrop {
   position: fixed;
