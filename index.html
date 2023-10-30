@@ -477,16 +477,18 @@
             </li>
           </ul>
         </div>
-        <div class="subscribe">
-          <p>Subscribe</p>
+        <div class="subscribe-block">
+          <p class="subscribe-caption">Subscribe</p>
           <form class="email-field" name="subcribe-form">
-            <label for="subscribe-email"></label>
-            <input
-              type="email"
-              name="subscribe-email"
-              placeholder="E-mail"
-              class="email-form"
-            />
+            <label for="subscribe-email">
+              <input
+                type="email"
+                name="subscribe-email"
+                placeholder="E-mail"
+                class="email-form"
+                id="subscribe-email"
+              />
+            </label>
             <button type="submit" class="subscribe-btn">
               Subscribe
               <svg class="frame" width="24" height="24">
@@ -528,7 +530,7 @@
           </div>
 
           <div class="modal-field">
-            <label for="user-name" class="modal-label">Phone</label>
+            <label for="user-phone" class="modal-label">Phone</label>
             <div class="modal-input-wrap">
               <input
                 type="tel"
@@ -559,11 +561,11 @@
             </div>
           </div>
 
-          <div class="modal-field">
-            <label for="user-text" class="modal-label">Comment</label>
+          <div class="modal-field-comment">
+            <label for="user-comment" class="modal-label">Comment</label>
             <textarea
-              name="user-text"
-              id="user-text"
+              name="user-comment"
+              id="user-comment"
               class="modal-text"
               placeholder="Text input"
             ></textarea>
@@ -575,7 +577,7 @@
               id="user-privacy"
               name="user-privacy"
               class="modal-checkbox visually-hidden"
-              value="confirm"
+              value="true"
             />
             <label for="user-privacy" class="checkbox-text">
               <span class="agreement-checkbox">
