@@ -5,7 +5,7 @@
  * Do NOT use SRI with dynamically generated files! More information: https://www.jsdelivr.com/using-sri-with-dynamic-files
  */
 /*! modern-normalize v2.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
-*,
+/*  *,
 ::after,
 ::before {
     box-sizing: border-box
@@ -136,5 +136,6 @@ progress {
 summary {
     display: list-item
 }
+*/
 
 /*# sourceMappingURL=/sm/5b7c27b6a0fd11e81f813b36dc26f6049a71a06907ce03d53d65a3bfe866b576.map */
