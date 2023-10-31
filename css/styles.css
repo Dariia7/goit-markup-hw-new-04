@@ -550,14 +550,34 @@ Modal window
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-btn:hover,
+/*.modal-btn:hover,
 .modal-btn:focus {
   border: none;
   background-color: #404bbf;
   fill: #ffffff;
 }
+*/
+
+.modal-btn:hover,
+.modal-btn:focus {
+  border: none;
+  background-color: #404bbf;
+}
+
+/*
 .modal-btn-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+*/
+
+.modal-btn-icon {
+  fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn:hover .modal-btn-icon,
+.modal-btn:focus .modal-btn-icon {
+  fill: #ffffff;
 }
 
 .modal-title {
@@ -597,7 +617,12 @@ Modal window
   padding-left: 38px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-input:focus {
+/*.modal-input:focus {
+  border-color: #4d5ae5;
+}
+*/
+
+.modal-input:focus-within {
   border-color: #4d5ae5;
 }
 
@@ -609,7 +634,11 @@ Modal window
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-input:focus + .modal-icon {
+/*.modal-input:focus + .modal-icon {
+  fill: #4d5ae5;
+}
+*/
+.class-input:focus-within + .class-icon {
   fill: #4d5ae5;
 }
 
@@ -661,6 +690,13 @@ Modal window
   border: none;
   fill: #f4f4fd;
 }
+
+/*.input-class:checked + .label-class > .span-class {
+    background-color: #404BBF;
+    border: none;
+    fill: #F4F4FD;
+    }*/
+
 .agreement-checkbox-icon {
   fill: transparent;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
